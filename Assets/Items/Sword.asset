@@ -16,3 +16,5 @@ MonoBehaviour:
   itemName: Sword
   value: 10
   icon: {fileID: 21300000, guid: 35344b6eebd5e9542a8e0a1108bf0b78, type: 3}
+  itemType: 1
+  equipType: 6
