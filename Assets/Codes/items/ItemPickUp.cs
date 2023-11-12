@@ -9,7 +9,9 @@ public class ItemPickUp : MonoBehaviour
     void Pickup()                                   // calls static inventory manager and adds item.
     {
         InventoryManager.Instance.Add(Item);        // adds item to list.
-        Destroy(gameObject);                        // destroys so no duplicates can be picked up.
+        // Destroy(gameObject);                        // destroys so no duplicates can be picked up.
+       
+        // uncomment destroy when /x1 x5 x10 is no longer needed.
     }
 
     private void OnMouseDown()                      // when the player clicks, it performs pickup function. (needs a collider to work)
