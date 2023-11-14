@@ -10,12 +10,15 @@ public class GridManager : MonoBehaviour
     // [SerializeField] private Transform cam;
     [SerializeField] private GameObject tileHolder;
 
-    private void Start()
+    public void DumpGrid()
     {
-        GenerateGrid();
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            Object.Destroy(transform.GetChild(i).gameObject);
+        }
     }
 
-    void GenerateGrid()
+    public void GenerateGrid()
     {
         for (int x = 0; x < width; x++)
         {
@@ -31,5 +34,10 @@ public class GridManager : MonoBehaviour
         }
 
         // cam.transform.position = new Vector3((float) width/2, (float) height/2, -10);
+    }
+
+    public void SetActive(bool b)
+    {
+        gameObject.SetActive(b);
     }
 }
