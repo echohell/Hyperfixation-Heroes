@@ -6,6 +6,7 @@ using UnityEngine;
 public class Skill : ScriptableObject            // scriptable objects are created to store large quantities of shared data.
 {
     public int id;                   // skill id for ability tables
+    public int numHits;
     public string skillName;          // skill name for display
     public string Description;       // description of item
     public float damage;                // data set values (can be inherent value or damage value, up to be changed)
