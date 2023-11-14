@@ -7,7 +7,7 @@ public class GridManager : MonoBehaviour
 {
     [SerializeField] private int width, height;
     [SerializeField] private Tile tilePrefab;
-    [SerializeField] private Transform cam;
+    // [SerializeField] private Transform cam;
     [SerializeField] private GameObject tileHolder;
 
     private void Start()
@@ -21,7 +21,7 @@ public class GridManager : MonoBehaviour
         {
             for (int y = 0; y < height; y++)
             {
-                var spawnTile = Instantiate(tilePrefab,new Vector3(x +.5f,y +.5f),Quaternion.identity);
+                var spawnTile = Instantiate(tilePrefab,new Vector3(x -15.5f,y -15.5f),Quaternion.identity);
                 spawnTile.name = $"Tile {x} {y}";
                 spawnTile.transform.parent = tileHolder.transform;
 
@@ -30,6 +30,6 @@ public class GridManager : MonoBehaviour
             }
         }
 
-        cam.transform.position = new Vector3((float) width/2, (float) height/2, -10);
+        // cam.transform.position = new Vector3((float) width/2, (float) height/2, -10);
     }
 }

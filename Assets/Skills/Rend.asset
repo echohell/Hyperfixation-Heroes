@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Rend
   m_EditorClassIdentifier: 
   id: 2
+  numHits: 1
   skillName: Rend
   Description: Bleed eternally
   damage: 0

@@ -536,7 +536,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 39a719d6b1128fe4c9870a1da36bb321, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -878,7 +878,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 19138499a9c359246ac0bbfeceb5ec9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3599,10 +3599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc39507c91c71b3479897eebade7ab4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 20
-  height: 10
+  width: 50
+  height: 25
   tilePrefab: {fileID: 682190902}
-  cam: {fileID: 1113077948}
   tileHolder: {fileID: 1102037276}
 --- !u!4 &1102037278
 Transform:
@@ -3716,12 +3715,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113077945}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: -2.5845482, y: -1.4329448, z: 103.790085}
+  m_LocalScale: {x: 1.0379009, y: 1.0379009, z: 1.0379008}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4428916297948967952}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122958537
 GameObject:
@@ -6478,6 +6477,7 @@ Transform:
   m_Children:
   - {fileID: 2806553397969650235}
   - {fileID: 4402681995194597034}
+  - {fileID: 1113077948}
   m_Father: {fileID: 1254671049}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &4609345146036997384
@@ -6813,6 +6813,7 @@ GameObject:
   - component: {fileID: 5936037743951700679}
   - component: {fileID: 5936037743951700680}
   - component: {fileID: 5936037743951700681}
+  - component: {fileID: 5936037743951700682}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6925,6 +6926,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5936037743951700682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5936037743951700678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2f516f4fb5f5e48a58ddaec06bdf31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRepeating: 1
+  moveDuration: 0.4
+  gridSize: 1
 --- !u!114 &6008635768165248716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7119,7 +7135,6 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1113077948}
   - {fileID: 690958953}
   - {fileID: 585690825}
   - {fileID: 714347741}
