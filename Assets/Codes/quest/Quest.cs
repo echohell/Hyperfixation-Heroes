@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName= "New Quest",menuName ="Quest/Create New Quest")]      // this makes a quick option when you right click in the unity panel.
-public class Quest : ScriptableObject            // scriptable objects are created to store large quantities of shared data.
+public class Quest : MonoBehaviour            // scriptable objects are created to store large quantities of shared data.
 {
     public int id;                   // quest id
     public string questName;          // quest name for display
     public string Description;       // description of quest
     public bool isComplete;          // boolean if quest previously completed
     public bool isFinished;          // boolean if quest can be turned in
-    public bool[] objectives;        // boolean array to flag individual objectives as completed
+    // public bool[] objectives = new bool[] { true, false, true, false, true, false, true, false, true, false };         // boolean array to flag individual objectives as completed
     public QuestType questType;        // quest types
     public QuestGoal goalType;         // objective types
 
@@ -25,14 +25,17 @@ public class Quest : ScriptableObject            // scriptable objects are creat
     }
     public void Update() 
     { 
+        checkObjectives();
     }
-    public bool checkObjectives(Quest.objectives[])    // check array for false objectives, return true if all objectives complete
+
+
+    public bool checkObjectives()    // check array for false objectives, return true if all objectives complete                 NOVEMBER 15TH, THIS WORKS SO FAR.
     {
         for (int i=0; i < objectives.Length; i++)
         {
             if (objectives[i] != true)
             { 
-                Debug.log(objectives[i]);
+                Debug.Log("Are we even hitting this? + " + objectives[i]);
                 return false; 
             }
 
