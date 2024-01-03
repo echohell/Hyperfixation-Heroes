@@ -5903,7 +5903,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1102037279}
         m_TargetAssemblyTypeName: CursorActivity, Assembly-CSharp
-        m_MethodName: TurnOff
+        m_MethodName: TurnOn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
