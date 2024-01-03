@@ -53,6 +53,15 @@ public class Quest : MonoBehaviour            // scriptable objects are created 
         isComplete = true;                                                          // finish the function
     }
 
+    public void assignQuest()
+    {
+        questType = QuestType.Main;
+        goalType = QuestGoal.Kill;
+
+        Debug.Log("Quest Name: " + questName + ", Desc: " + Description + ".");
+        Debug.Log("Quest type is " + questType + ", goal type is " + goalType + ".");
+    }
+
     // Previous code block was public bool checkObjectives. It did not correctly return true or false because there was a blank area.
     // isComplete just got highjacked to end the function, it can be changed to it's own variable at any time.
     // Previous function just finished the for loop and then returned true anyway which is, just, not correct.
