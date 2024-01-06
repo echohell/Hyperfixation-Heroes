@@ -63,7 +63,7 @@ public class CombatMove : MonoBehaviour
 
         while (currentWaypointIndex < path.Count)
         {
-            targetPos = path[currentWaypointIndex] + gridSize / 2;
+            targetPos = path[currentWaypointIndex] + gridSize / 2;                    // THIS IS PROBABLY THE PROBLEM LINE ( Y VALUE )
 
             while ((Vector2)transform.position != targetPos)
             {
