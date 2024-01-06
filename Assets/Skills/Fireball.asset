@@ -13,12 +13,11 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   id: 1
-  numHits: 1
   skillName: Fireball
   Description: Here comes the boom
   damage: 0.8
   range: 4
-  aoe: 1
+  reticle: {fileID: 21300000, guid: c9a167191362a7d47b0d12a917c05624, type: 3}
   icon: {fileID: 21300000, guid: b0f002d4f78cd4b44aa5f5b0082c573f, type: 3}
   skillType: 0
   elementType: 1
