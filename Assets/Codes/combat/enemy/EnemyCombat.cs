@@ -7,6 +7,8 @@ public class EnemyCombat : MonoBehaviour, Idamaging         // inherit Idamaging
     public GameObject thisObj;                              // basic placeholder script.
     public void DamageCalc()                                // Idamaging needs this script as an interface.
     {
-        GameObject.Destroy(thisObj);                        // basic placeholder destroy instead of taking damage logic.
+        GetComponent<LootTable>().InstantiateLoot(transform.position);
+        // GameObject.Destroy(thisObj); // turn this back on when we wanna kill enemies.  
+        // basic placeholder destroy instead of taking damage logic.
     }
 }

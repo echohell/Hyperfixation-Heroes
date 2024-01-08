@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 006a829904791e84b8bd9badfeb837e0, type: 3}
-  m_Name: DeezNutz
+  m_Name: Gold
   m_EditorClassIdentifier: 
-  id: 3
-  itemName: DeezNutz
-  Description: Roasted to perfection
-  value: 300
-  icon: {fileID: 21300000, guid: 00ef106e1f1084644a723549f3e3379e, type: 3}
+  id: 1
+  itemName: Gold
+  Description: A smattering of gold coins
+  value: 100
+  icon: {fileID: 21300000, guid: 23fd4125f68e5594ead2e5e04940681d, type: 3}
   itemType: 2
   equipType: 0
-  dropChance: 10
+  dropChance: 100

@@ -42,14 +42,15 @@ public class Quest : MonoBehaviour            // scriptable objects are created 
         for (int i = 0; i < objectives.Length; i++)                                     // simple for loop
         {
             if (objectives[i] != true)                                              // iterate through i integer
-            { 
-                Debug.Log("Are we even hitting this? + " + objectives[i]);          // spit out if it is false
+            {
+
             }
             else
             {
-                Debug.Log("We are hitting this? + " + objectives[i]);               // spit out if it is true
+
             }
         }
+        Debug.Log("Completed check of quest array.");
         isComplete = true;                                                          // finish the function
     }
 

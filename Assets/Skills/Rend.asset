@@ -18,7 +18,7 @@ MonoBehaviour:
   damage: 0
   range: 1
   reticle: {fileID: 21300000, guid: 96af8cea777204f4bb32467575026363, type: 3}
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e7f216e25ebbb4b4093c7c92e6722f77, type: 3}
   skillType: 1
   elementType: 0
   effectType: 7

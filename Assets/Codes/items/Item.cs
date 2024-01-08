@@ -12,6 +12,7 @@ public class Item : ScriptableObject            // scriptable objects are create
     public Sprite icon;              // the image sprite
     public ItemType itemType;        // enum below gives a dropdown to specify the use
     public EquipType equipType;      // enum specifically for equippable items
+    public int dropChance;           // int to represent drop rate, closer to 1 is rarer.
 
     public enum ItemType             // can be expanded at a later time to include other values like gold and gems
     {
@@ -21,5 +22,11 @@ public class Item : ScriptableObject            // scriptable objects are create
     public enum EquipType            // our current list of equippable items
     {
         None, Head, Chest, Legs, Boots, Neck, MainHand, OffHand, Gloves, Ring1, Ring2, Trinket, Shoulder, Cape, Belt
+    }
+
+    public Item(string lootName, int dropChance)
+    {
+        this.itemName = lootName;
+        this.dropChance = dropChance;
     }
 }
