@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum MovementDirections
+public enum MovementDirections                                                          // directional enums
 {
     Up, Down, Left, Right
 }
 
 public class CombatMove : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 5f;                                      // the speed at which the player moves during astar
     [SerializeField] private Vector2 gridSize = new Vector2(1f, 1f);
     [SerializeField] private obstacleTiles obstacleTile;
     [SerializeField] private TileSelect tileSelect;

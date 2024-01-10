@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
+using UnityEngine.Tilemaps;                                                                                 // calls on tilemap
 
 public class TileSelect : MonoBehaviour
 {
-    [SerializeField] private Tilemap tilemap;
-    [SerializeField] private Tilemap obstaclesmap;
-    [SerializeField] private float offset = .5f;
-    [SerializeField] private Vector2 gridSize = new Vector2(1f, 1f);
+    [SerializeField] private Tilemap tilemap;                                                               // set a background interactable tile map
+    [SerializeField] private Tilemap obstaclesmap;                                                          // set an obstacle map
+    [SerializeField] private float offset = .5f;                                                            // set the offset value in selecting tiles
+    [SerializeField] private Vector2 gridSize = new Vector2(1f, 1f);                                        // set base grid values of vec2
 
-    private Vector2Int highlightTilePos = Vector2Int.zero;
+    private Vector2Int highlightTilePos = Vector2Int.zero;                                                  // set highlighting tile pos (sword)
 
     private void Update()
     {
